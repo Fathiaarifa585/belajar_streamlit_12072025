@@ -40,6 +40,8 @@ with col3:
     st.header("An owl")
     st.image("https://static.streamlit.io/examples/owl.jpg")
 
+import time
+
 with st.sidebar:
     with st.echo():
         st.write("This code will be printed to the sidebar.")
@@ -47,3 +49,5 @@ with st.sidebar:
     with st.spinner("Loading..."):
         time.sleep(5)
     st.success("Done!")
+
+st.success('This is a success message!', icon="✅")
